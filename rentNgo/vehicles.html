@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicles - RentNgo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vehicles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">RentNgo</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vehicles.html" class="active">Vehicles</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="nav-buttons" id="nav-buttons">
+                <!-- Dynamic button will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Browse Our Vehicles</h1>
+            <p>Choose from our wide range of cars</p>
+        </div>
+    </section>
+
+
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <label>Vehicle Type</label>
+                    <select>
+                        <option>All Types</option>
+                        <option>Hatchback</option>
+                        <option>Sedan</option>
+                        <option>SUV</option>
+                        <option>Luxury</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Price Range</label>
+                    <select>
+                        <option>All Prices</option>
+                        <option>Under ₹1000</option>
+                        <option>₹1000 - ₹1500</option>
+                        <option>Above ₹1500</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Seats</label>
+                    <select>
+                        <option>All</option>
+                        <option>4-5</option>
+                        <option>6-7</option>
+                        <option>7+</option>
+                    </select>
+                </div>
+                <button class="filter-btn">Apply Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Vehicles -->
+    <section class="all-vehicles">
+        <div class="container">
+            <h2 class="section-title">All Vehicles</h2>
+            <div class="vehicles-grid">
+            
+
+
+
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=400&h=250&fit=crop" alt="Maruti Swift">
+                        <button class="wishlist-btn" onclick="toggleWishlist(this)" title="Add to Wishlist">
+                            ♥
+                        </button>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Maruti Swift</h3>
+                        <div class="price">
+                            <span class="amount">₹1,200</span>
+                            <span class="period">/ day</span>
+                        </div>
+                        <div class="features">
+                            <span class="feature">4 Seats</span>
+                            <span class="feature">Manual</span>
+                            <span class="feature">Petrol</span>
+                        </div>
+                        <div class="rating">★★★★★ <span class="rating-count">(4.8)</span></div>
+                        <button class="view-details-btn" onclick="viewCarDetails('Maruti Swift', '1200', '4', 'Manual', 'Petrol', '4.8', '2', 'https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=800&h=500&fit=crop')">
+                            View Details 
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Car 2 -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=400&h=250&fit=crop" alt="Hyundai Creta">
+                        <button class="wishlist-btn" onclick="toggleWishlist(this)" title="Add to Wishlist">
+                            ♥
+                        </button>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Hyundai Creta</h3>
+                        <div class="price">
+                            <span class="amount">₹1,800</span>
+                            <span class="period">/ day</span>
+                        </div>
+                        <div class="features">
+                            <span class="feature">5 Seats</span>
+                            <span class="feature">Auto</span>
+                            <span class="feature">Diesel</span>
+                        </div>
+                        <div class="rating">★★★★★ <span class="rating-count">(4.6)</span></div>
+                        <button class="view-details-btn" onclick="viewCarDetails('Hyundai Creta', '1800', '5', 'Auto', 'Diesel', '4.6', '3', 'https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=800&h=500&fit=crop')">
+                            View Details 
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Car 3 -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=400&h=250&fit=crop" alt="Tata Altroz">
+                        <button class="wishlist-btn" onclick="toggleWishlist(this)" title="Add to Wishlist">
+                            ♥
+                        </button>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Tata Altroz</h3>
+                        <div class="price">
+                            <span class="amount">₹1,230</span>
+                            <span class="period">/ day</span>
+                        </div>
+                        <div class="features">
+                            <span class="feature">5 Seats</span>
+                            <span class="feature">Manual</span>
+                            <span class="feature">Petrol</span>
+                        </div>
+                        <div class="rating">★★★★ <span class="rating-count">(4.2)</span></div>
+                        <button class="view-details-btn" onclick="viewCarDetails('Tata Altroz', '1230', '5', 'Manual', 'Petrol', '4.2', '2', 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&h=500&fit=crop')">
+                            View Details 
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Car 4 -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=400&h=250&fit=crop" alt="Mahindra Thar">
+                        <button class="wishlist-btn" onclick="toggleWishlist(this)" title="Add to Wishlist">
+                            ♥
+                        </button>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Mahindra Thar</h3>
+                        <div class="price">
+                            <span class="amount">₹2,500</span>
+                            <span class="period">/ day</span>
+                        </div>
+                        <div class="features">
+                            <span class="feature">4 Seats</span>
+                            <span class="feature">Manual</span>
+                            <span class="feature">Diesel</span>
+                        </div>
+                        <div class="rating">★★★★ <span class="rating-count">(4.5)</span></div>
+                        <button class="view-details-btn" onclick="viewCarDetails('Mahindra Thar', '2500', '4', 'Manual', 'Diesel', '4.5', '2', 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&h=500&fit=crop')">
+                            View Details 
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Car 5 -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=400&h=250&fit=crop" alt="Honda City">
+                        <button class="wishlist-btn" onclick="toggleWishlist(this)" title="Add to Wishlist">
+                            ♥
+                        </button>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Honda City</h3>
+                        <div class="price">
+                            <span class="amount">₹2,200</span>
+                            <span class="period">/ day</span>
+                        </div>
+                        <div class="features">
+                            <span class="feature">5 Seats</span>
+                            <span class="feature">Auto</span>
+                            <span class="feature">Petrol</span>
+                        </div>
+                        <div class="rating">★★★★★ <span class="rating-count">(4.9)</span></div>
+                        <button class="view-details-btn" onclick="viewCarDetails('Honda City', '2200', '5', 'Auto', 'Petrol', '4.9', '3', 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&h=500&fit=crop')">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Car 6 -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="https://images.unsplash.com/photo-1550355291-bbee04a92027?w=400&h=250&fit=crop" alt="Toyota Fortuner">
+                        <button class="wishlist-btn" onclick="toggleWishlist(this)" title="Add to Wishlist">
+                            ♥
+                        </button>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Toyota Fortuner</h3>
+                        <div class="price">
+                            <span class="amount">₹3,500</span>
+                            <span class="period">/ day</span>
+                        </div>
+                        <div class="features">
+                            <span class="feature">7 Seats</span>
+                            <span class="feature">Auto</span>
+                            <span class="feature">Diesel</span>
+                        </div>
+                        <div class="rating">★★★★★ <span class="rating-count">(4.9)</span></div>
+                        <button class="view-details-btn" onclick="viewCarDetails('Toyota Fortuner', '3500', '7', 'Auto', 'Diesel', '4.9', '4', 'https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&h=500&fit=crop')">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <span class="logo-text">RentNgo</span>
+                    </div>
+                    
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">TW</a>
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">LI</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="vehicles.html">Browse Cars</a></li>
+                        <li><a href="my-bookings.html">My Bookings</a></li>
+                        <li><a href="#">Locations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-list">
+                        <li>support@rentngo.com</li>
+                        <li>+91-8423712359</li>
+
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">EM</a>
+                        <a href="#" class="social-icon">TW</a>
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">LI</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>rentNgo</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

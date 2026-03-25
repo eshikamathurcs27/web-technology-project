@@ -1,0 +1,122 @@
+.my-bookings-section {
+    padding: 120px 0 60px;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #f8fafc, #ffffff);
+    margin-top: 60px;
+}
+
+.bookings-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bookings-container h2 {
+    font-size: 36px;
+    color: #1e293b;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.bookings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.booking-card {
+    background: white;
+    border-radius: 16px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 200px 1fr auto;
+    gap: 25px;
+    align-items: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s;
+}
+
+.booking-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.booking-card img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.booking-info h3 {
+    font-size: 22px;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.booking-details {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.detail-icon {
+    font-size: 18px;
+    color: #2563eb;
+}
+
+.booking-status {
+    text-align: right;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.status-badge.upcoming {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.status-badge.completed {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.cancel-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.cancel-btn:hover {
+    background: #dc2626;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .booking-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .booking-status {
+        text-align: center;
+    }
+}
