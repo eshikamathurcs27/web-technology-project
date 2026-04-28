@@ -1,8 +1,4 @@
-const API_BASE_URL =
-  window.location.protocol.startsWith("http") && window.location.origin !== "null"
-    ? `${window.location.origin}/api`
-    : "http://localhost:5000/api";
-
+const API_BASE_URL = "https://web-technology-project-g5qh.onrender.com/api";
 const AUTH_TOKEN_KEY = "rentngoToken";
 const AUTH_USER_KEY = "rentngoUser";
 const RECENT_BOOKING_KEY = "rentngoRecentBooking";
