@@ -154,3 +154,15 @@
     transform: translateY(-3px);
     box-shadow: 0 10px 30px rgba(37, 99, 235, 0.4);
 }
+
+@media (max-width: 768px) {
+    .booking-box,
+    .success-box {
+        padding: 28px;
+    }
+
+    .car-summary {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

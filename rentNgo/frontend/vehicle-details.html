@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Details - RentNgo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vehicle-details.css">
+</head>
+<body data-page="vehicles">
+    <div data-include="partials/navbar.html"></div>
+
+    <section class="vehicle-detail">
+        <div class="container">
+            <div class="detail-grid">
+                <div class="detail-images">
+                    <div class="main-image">
+                        <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=800&h=500&fit=crop" alt="Car" id="main-car-image">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=200&h=150&fit=crop" class="active" alt="View 1" onclick="changeImage(this)">
+                        <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=200&h=150&fit=crop" alt="View 2" onclick="changeImage(this)">
+                        <img src="https://images.unsplash.com/photo-1550355291-bbee04a92027?w=200&h=150&fit=crop" alt="View 3" onclick="changeImage(this)">
+                        <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=200&h=150&fit=crop" alt="View 4" onclick="changeImage(this)">
+                    </div>
+                </div>
+
+                <div class="detail-info">
+                    <h1 id="car-name">Loading vehicle...</h1>
+                    <div class="rating-large" id="car-rating">&#9733;&#9733;&#9733;&#9733;&#9733; (4.8/5)</div>
+
+                    <div class="price-large">
+                        <span class="big-price" id="car-price">&#8377;1200</span>
+                        <span class="per-day"> / day</span>
+                    </div>
+
+                    <div class="specifications">
+                        <div class="spec-item">
+                            <span class="spec-icon">SEAT</span>
+                            <span id="car-seats">4 Seats</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-icon">GEAR</span>
+                            <span id="car-transmission">Manual</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-icon">FUEL</span>
+                            <span id="car-fuel">Petrol</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-icon">BAG</span>
+                            <span id="car-bags">2 Bags</span>
+                        </div>
+                    </div>
+
+                    <p class="car-description" id="car-description">
+                        Loading vehicle description...
+                    </p>
+
+                    <div class="booking-form">
+                        <h3>Ready To Book?</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Pick-up Date</label>
+                                <input type="date">
+                            </div>
+                            <div class="form-group">
+                                <label>Pick-up Time</label>
+                                <input type="time">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Drop-off Date</label>
+                                <input type="date">
+                            </div>
+                            <div class="form-group">
+                                <label>Drop-off Time</label>
+                                <input type="time">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Pick-up Location</label>
+                            <input type="text" placeholder="Enter pickup location">
+                        </div>
+                        <button class="book-now-btn" type="button">Continue To Booking</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="similar-vehicles">
+        <div class="container">
+            <h2>Similar Vehicles</h2>
+            <div class="vehicles-grid" id="similar-vehicles-grid">
+                <div class="empty-state">Loading similar vehicles...</div>
+            </div>
+        </div>
+    </section>
+
+    <div data-include="partials/footer.html"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

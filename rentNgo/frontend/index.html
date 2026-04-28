@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentNgo - Rent Your Dream Ride</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body data-page="home">
+    <div data-include="partials/navbar.html"></div>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-eyebrow fade-in">Self-drive rentals across major cities</span>
+            <h1 class="fade-in">Rent Your <span class="highlight">Dream Ride</span> Today</h1>
+            <p class="fade-in-delay">Book verified cars in minutes, compare daily prices, and drive on your schedule.</p>
+
+            <div class="search-box">
+                <div class="search-field">
+                    <span class="icon">LOC</span>
+                    <input type="text" placeholder="Pickup Location">
+                </div>
+                <div class="search-field">
+                    <span class="icon">DATE</span>
+                    <input type="date">
+                </div>
+                <div class="search-field">
+                    <span class="icon">TIME</span>
+                    <input type="time">
+                </div>
+                <button class="search-btn" onclick="window.location.href='vehicles.html'">
+                    Explore Fleet
+                </button>
+            </div>
+
+            <div class="hero-stats fade-in-delay">
+                <div class="hero-stat">
+                    <strong>120+</strong>
+                    <span>Vehicles ready</span>
+                </div>
+                <div class="hero-stat">
+                    <strong>24/7</strong>
+                    <span>Roadside support</span>
+                </div>
+                <div class="hero-stat">
+                    <strong>4.8/5</strong>
+                    <span>Average trip rating</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trust-strip">
+        <div class="container trust-grid">
+            <div class="trust-item">
+                <span class="trust-icon">OK</span>
+                <div>
+                    <h3>Verified Fleet</h3>
+                    <p>Every car is checked, cleaned, and road-ready before pickup.</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <span class="trust-icon">INR</span>
+                <div>
+                    <h3>Transparent Pricing</h3>
+                    <p>See the rental cost upfront with no confusing hidden charges.</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <span class="trust-icon">FAST</span>
+                <div>
+                    <h3>Fast Booking</h3>
+                    <p>Choose a vehicle, confirm your dates, and manage everything online.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-vehicles">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Vehicles</h2>
+                <p class="subtitle">Best cars at affordable prices</p>
+            </div>
+
+            <div class="vehicles-grid">
+                <div class="empty-state">Loading featured vehicles...</div>
+            </div>
+
+            <div class="view-all">
+                <button class="view-all-btn" onclick="window.location.href='vehicles.html'">
+                    View All Vehicles
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="journey-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>How RentNgo Works</h2>
+                <p class="subtitle">A smooth booking flow designed for daily rides, weekend plans, and long road trips.</p>
+            </div>
+            <div class="journey-grid">
+                <article class="journey-card">
+                    <span class="journey-step">01</span>
+                    <h3>Browse &amp; Compare</h3>
+                    <p>Check seats, transmission, fuel type, and pricing before you pick a vehicle.</p>
+                </article>
+                <article class="journey-card">
+                    <span class="journey-step">02</span>
+                    <h3>Select Your Dates</h3>
+                    <p>Choose your rental window and confirm your booking in just a few clicks.</p>
+                </article>
+                <article class="journey-card">
+                    <span class="journey-step">03</span>
+                    <h3>Drive With Confidence</h3>
+                    <p>Track bookings, check trip details, and manage your plans from one place.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Simple Pricing For Every Trip</h2>
+                <p class="subtitle">Choose a segment that matches your budget and travel style.</p>
+            </div>
+            <div class="pricing-grid">
+                <article class="pricing-card">
+                    <span class="pricing-tag">City Saver</span>
+                    <h3>Compact Cars</h3>
+                    <p class="pricing-value">From &#8377;1,200 / day</p>
+                    <ul class="pricing-list">
+                        <li>Fuel-efficient daily rides</li>
+                        <li>Best for solo and couple trips</li>
+                        <li>Easy parking in city areas</li>
+                    </ul>
+                </article>
+                <article class="pricing-card featured-pricing">
+                    <span class="pricing-tag">Most Popular</span>
+                    <h3>Premium SUVs</h3>
+                    <p class="pricing-value">From &#8377;2,200 / day</p>
+                    <ul class="pricing-list">
+                        <li>Extra cabin comfort</li>
+                        <li>Ideal for family travel</li>
+                        <li>Strong highway performance</li>
+                    </ul>
+                </article>
+                <article class="pricing-card">
+                    <span class="pricing-tag">Road Trip Pro</span>
+                    <h3>Adventure Fleet</h3>
+                    <p class="pricing-value">From &#8377;3,000 / day</p>
+                    <ul class="pricing-list">
+                        <li>Built for mountain and long drives</li>
+                        <li>Higher luggage capacity</li>
+                        <li>Great for group travel</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="locations-section" id="locations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pickup Locations</h2>
+                <p class="subtitle">Book online and collect your vehicle from one of our active service hubs.</p>
+            </div>
+            <div class="locations-grid">
+                <article class="location-card">
+                    <h3>New Delhi</h3>
+                    <p>Airport pickups, metro-friendly city points, and quick business rentals.</p>
+                    <span>Popular for: City rides and airport runs</span>
+                </article>
+                <article class="location-card">
+                    <h3>Mumbai</h3>
+                    <p>Flexible booking for coastal drives, work travel, and weekend escapes.</p>
+                    <span>Popular for: Urban travel and coastal trips</span>
+                </article>
+                <article class="location-card">
+                    <h3>Bangalore</h3>
+                    <p>Easy access to self-drive cars for commutes, getaways, and tech park travel.</p>
+                    <span>Popular for: Daily commute and hill station routes</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <div>
+                    <p class="cta-label">Ready for your next ride?</p>
+                    <h2>Choose a vehicle that fits your route and your vibe.</h2>
+                    <p>From compact city drives to premium SUVs, RentNgo helps you move faster with a better booking experience.</p>
+                </div>
+                <div class="cta-actions">
+                    <button class="view-all-btn" onclick="window.location.href='vehicles.html'">Browse Vehicles</button>
+                    <button class="cta-secondary-btn" onclick="window.location.href='my-bookings.html'">View My Bookings</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="container contact-grid">
+            <div class="contact-copy">
+                <span class="hero-eyebrow">Need help?</span>
+                <h2>Talk to the RentNgo team</h2>
+                <p>Have a pricing question, booking issue, or partnership request? Send a message and we will get back to you.</p>
+                <div class="contact-points">
+                    <div>
+                        <strong>Email</strong>
+                        <span>support@rentngo.com</span>
+                    </div>
+                    <div>
+                        <strong>Phone</strong>
+                        <span>+91 84237 12359</span>
+                    </div>
+                    <div>
+                        <strong>Hours</strong>
+                        <span>Mon to Sun, 8 AM to 10 PM</span>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contact-name">Full Name</label>
+                        <input type="text" id="contact-name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email Address</label>
+                        <input type="email" id="contact-email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contact-phone">Phone Number</label>
+                        <input type="tel" id="contact-phone" placeholder="Optional phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">Subject</label>
+                        <input type="text" id="contact-subject" placeholder="Booking, pricing, support..." required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" rows="5" placeholder="Tell us how we can help" required></textarea>
+                </div>
+                <button type="submit" class="contact-submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <div data-include="partials/footer.html"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

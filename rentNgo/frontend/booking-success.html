@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmed - RentNgo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body data-page="booking">
+    <div data-include="partials/navbar.html"></div>
+
+    <section class="success-section">
+        <div class="success-box">
+            <div class="success-icon">OK</div>
+            <h2>Booking Confirmed!</h2>
+            <p>Your vehicle has been successfully booked.</p>
+
+            <div class="booking-id">
+                <span id="success-booking-id">Booking ID: Pending</span>
+            </div>
+
+            <div class="booking-summary" style="text-align: left; background: #f1f5f9; padding: 25px; border-radius: 12px; margin-bottom: 30px;">
+                <h3 style="margin-bottom: 15px; color: #1e293b;">Booking Details</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                    <div>
+                        <p style="color: #64748b; font-size: 14px;">Vehicle</p>
+                        <p style="color: #1e293b; font-weight: 600;" id="success-vehicle-name">Vehicle</p>
+                    </div>
+                    <div>
+                        <p style="color: #64748b; font-size: 14px;">Pick-up Date</p>
+                        <p style="color: #1e293b; font-weight: 600;" id="success-start-date">-</p>
+                    </div>
+                    <div>
+                        <p style="color: #64748b; font-size: 14px;">Pick-up Time</p>
+                        <p style="color: #1e293b; font-weight: 600;" id="success-start-time">-</p>
+                    </div>
+                    <div>
+                        <p style="color: #64748b; font-size: 14px;">Total Amount</p>
+                        <p style="color: #16a34a; font-weight: 700; font-size: 18px;" id="success-total-price">&#8377;0</p>
+                    </div>
+                </div>
+            </div>
+
+            <p style="margin-bottom: 25px; color: #64748b;">
+                A booking summary has been saved in your account dashboard.
+            </p>
+
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <button class="success-btn" onclick="window.location.href='my-bookings.html'">
+                    View My Bookings
+                </button>
+                <button class="success-btn" style="background: white; color: #2563eb; border: 2px solid #2563eb;" onclick="window.location.href='index.html'">
+                    Back to Home
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div data-include="partials/footer.html"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

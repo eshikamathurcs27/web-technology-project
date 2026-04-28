@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicles - RentNgo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vehicles.css">
+</head>
+<body data-page="vehicles">
+    <div data-include="partials/navbar.html"></div>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Browse Our Vehicles</h1>
+            <p>Compare daily rentals for city rides, business travel, and long weekend road trips.</p>
+        </div>
+    </section>
+
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <label for="vehicle-type-filter">Vehicle Type</label>
+                    <select id="vehicle-type-filter">
+                        <option value="all">All Vehicles</option>
+                        <option value="car">Cars</option>
+                        <option value="bike">Bikes</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price-range-filter">Price Range</label>
+                    <select id="price-range-filter">
+                        <option value="all">All Prices</option>
+                        <option value="budget">Under &#8377;1,500</option>
+                        <option value="mid">&#8377;1,500 - &#8377;2,500</option>
+                        <option value="premium">Above &#8377;2,500</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="trip-style-filter">Trip Style</label>
+                    <select id="trip-style-filter">
+                        <option value="all">All Trips</option>
+                        <option value="city">City Commute</option>
+                        <option value="family">Family Travel</option>
+                        <option value="adventure">Adventure Drive</option>
+                    </select>
+                </div>
+                <button class="filter-btn" type="button">Refresh Fleet</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="all-vehicles">
+        <div class="container">
+            <h2 class="section-title">All Vehicles</h2>
+            <p class="filter-results" id="filter-results">Loading vehicles...</p>
+            <div class="vehicles-grid">
+                <div class="empty-state">Loading available vehicles...</div>
+            </div>
+        </div>
+    </section>
+
+    <div data-include="partials/footer.html"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

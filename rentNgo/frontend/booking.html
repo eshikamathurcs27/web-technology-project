@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - RentNgo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body data-page="booking">
+    <div data-include="partials/navbar.html"></div>
+
+    <section class="booking-section">
+        <div class="booking-container">
+            <div class="booking-box">
+                <h2>Complete Your Booking</h2>
+
+                <div class="car-summary">
+                    <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=300&h=200&fit=crop" alt="Selected vehicle" id="booking-vehicle-image">
+                    <div>
+                        <h3 id="booking-vehicle-name">Selected Vehicle</h3>
+                        <div class="price-summary">
+                            <div class="price-row">
+                                <span>&#8377;0 x 1 day</span>
+                                <span>&#8377;0</span>
+                            </div>
+                            <div class="price-row">
+                                <span>Insurance</span>
+                                <span>&#8377;0</span>
+                            </div>
+                            <div class="price-row">
+                                <span>Taxes</span>
+                                <span>&#8377;0</span>
+                            </div>
+                            <div class="price-row total">
+                                <span>Total Amount</span>
+                                <span>&#8377;0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="pickup-date">Pick-up Date</label>
+                            <input type="date" id="pickup-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pickup-time">Pick-up Time</label>
+                            <input type="time" id="pickup-time" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dropoff-date">Drop-off Date</label>
+                            <input type="date" id="dropoff-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dropoff-time">Drop-off Time</label>
+                            <input type="time" id="dropoff-time" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pickup-location">Pick-up Location</label>
+                        <input type="text" id="pickup-location" placeholder="Enter pickup location" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dropoff-location">Drop-off Location</label>
+                        <input type="text" id="dropoff-location" placeholder="Enter drop-off location" required>
+                    </div>
+
+                    <div class="form-group" style="margin-top: 25px;">
+                        <label style="font-size: 16px; margin-bottom: 15px; display: block;">Payment Method</label>
+                        <label class="checkbox-label" style="margin-bottom: 10px; display: flex;">
+                            <input type="radio" name="payment" checked> Credit / Debit Card
+                        </label>
+                        <label class="checkbox-label" style="margin-bottom: 10px; display: flex;">
+                            <input type="radio" name="payment"> UPI
+                        </label>
+                        <label class="checkbox-label" style="margin-bottom: 10px; display: flex;">
+                            <input type="radio" name="payment"> Net Banking
+                        </label>
+                        <label class="checkbox-label" style="margin-bottom: 10px; display: flex;">
+                            <input type="radio" name="payment"> Cash on Pickup
+                        </label>
+                    </div>
+
+                    <button type="submit" class="confirm-btn">Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div data-include="partials/footer.html"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
